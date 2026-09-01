@@ -3,30 +3,30 @@
 <head>
 
 <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Wedding & Event Decoration in Nashik | Belivit Events</title>
+<title>Belivit Events | Wedding & Event Decoration in Nashik</title>
 
-<meta name="description" content="Belivit Events is a professional wedding and event decorator in Nashik and Nashik Road. Wedding, birthday, engagement, haldi, mehendi, Ganpati and corporate event decoration.">
+<meta name="description" content="Belivit Events is a professional wedding and event decoration company in Nashik and Nashik Road. We provide wedding, birthday, engagement, haldi, mehendi, Ganpati and corporate event decoration services.">
+
+<meta name="keywords" content="wedding decoration Nashik, wedding decorator Nashik, event decoration Nashik, wedding decoration Nashik Road, birthday decoration Nashik, Ganpati decoration Nashik, haldi decoration Nashik, mehendi decoration Nashik, engagement decoration Nashik, reception decoration Nashik, event decorator Nashik">
 
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://belivitevents.in/">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Wedding & Event Decoration in Nashik | Belivit Events">
-<meta property="og:description" content="Professional wedding, birthday, engagement, haldi, mehendi, Ganpati and event decoration services in Nashik.">
+<meta property="og:title" content="Belivit Events | Wedding & Event Decoration in Nashik">
+<meta property="og:description" content="Professional wedding and event decoration services in Nashik and Nashik Road.">
 <meta property="og:url" content="https://belivitevents.in/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Belivit Events">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Wedding & Event Decoration in Nashik | Belivit Events">
-<meta name="twitter:description" content="Professional wedding and event decoration services in Nashik and Nashik Road.">
-
 <style>
-*{box-sizing:border-box}
+
+*{
+box-sizing:border-box;
+}
 
 html{
 scroll-behavior:smooth;
@@ -36,24 +36,50 @@ body{
 margin:0;
 font-family:Arial,Helvetica,sans-serif;
 color:#222;
-line-height:1.6;
+background:#fff;
 }
+
+/* ================= HEADER ================= */
 
 header{
 position:sticky;
 top:0;
-z-index:10;
+z-index:100;
 background:#fff;
-box-shadow:0 2px 12px #0001;
+box-shadow:0 2px 15px rgba(0,0,0,.10);
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:10px 6%;
+padding:7px 6%;
+min-height:82px;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:14px;
+text-decoration:none;
 }
 
 .logo{
-height:62px;
+height:76px;
 width:auto;
+max-width:95px;
+display:block;
+object-fit:contain;
+}
+
+.brand-name{
+font-size:27px;
+font-weight:800;
+letter-spacing:1px;
+color:#b83b70;
+white-space:nowrap;
+}
+
+nav{
+display:flex;
+align-items:center;
 }
 
 nav a{
@@ -61,7 +87,14 @@ margin-left:22px;
 text-decoration:none;
 color:#333;
 font-weight:600;
+transition:.2s;
 }
+
+nav a:hover{
+color:#b83b70;
+}
+
+/* ================= HERO ================= */
 
 .hero{
 min-height:78vh;
@@ -76,14 +109,14 @@ background:linear-gradient(135deg,#fff7fb,#fff);
 font-size:clamp(40px,7vw,76px);
 margin:12px 0;
 color:#b83b70;
-line-height:1.1;
+line-height:1.08;
 }
 
 .hero p{
 font-size:20px;
-max-width:800px;
+max-width:750px;
 margin:0 auto 28px;
-line-height:1.7;
+line-height:1.6;
 }
 
 .btn{
@@ -93,6 +126,11 @@ border-radius:30px;
 text-decoration:none;
 font-weight:700;
 margin:6px;
+transition:.2s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
 }
 
 .primary{
@@ -103,7 +141,10 @@ color:#fff;
 .secondary{
 border:1px solid #b83b70;
 color:#b83b70;
+background:#fff;
 }
+
+/* ================= SECTIONS ================= */
 
 section{
 padding:75px 6%;
@@ -120,10 +161,13 @@ color:#b83b70;
 
 .lead{
 text-align:center;
-max-width:800px;
+max-width:750px;
 margin:0 auto 40px;
 line-height:1.7;
+font-size:18px;
 }
+
+/* ================= SERVICES ================= */
 
 .cards{
 display:grid;
@@ -135,12 +179,19 @@ gap:20px;
 padding:25px;
 border-radius:18px;
 background:#fff7fb;
-box-shadow:0 8px 30px #0000000d;
+box-shadow:0 8px 30px rgba(0,0,0,.06);
 }
 
 .card h3{
 margin-top:0;
+font-size:21px;
 }
+
+.card p{
+line-height:1.6;
+}
+
+/* ================= GALLERY ================= */
 
 .gallery{
 display:grid;
@@ -159,12 +210,14 @@ border-radius:16px;
 width:100%;
 height:100%;
 object-fit:cover;
-transition:transform .3s ease;
+transition:.3s;
 }
 
 .gallery-item:hover img{
 transform:scale(1.04);
 }
+
+/* ================= ABOUT ================= */
 
 .about{
 background:#fafafa;
@@ -176,18 +229,19 @@ max-width:1200px;
 margin:auto;
 }
 
+/* ================= CONTACT ================= */
+
 .contact{
 text-align:center;
 background:#fff7fb;
 max-width:none;
 }
 
-footer{
-padding:30px 6%;
-text-align:center;
-background:#222;
-color:#fff;
+.contact p{
+font-size:18px;
 }
+
+/* ================= WHATSAPP ================= */
 
 .float{
 position:fixed;
@@ -199,55 +253,125 @@ padding:15px 20px;
 border-radius:30px;
 text-decoration:none;
 font-weight:700;
-box-shadow:0 5px 20px #0003;
-z-index:20;
+box-shadow:0 5px 20px rgba(0,0,0,.20);
+z-index:200;
 }
+
+.float:hover{
+transform:translateY(-2px);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+padding:30px 6%;
+text-align:center;
+background:#222;
+color:#fff;
+}
+
+/* ================= MOBILE ================= */
 
 @media(max-width:700px){
 
 header{
-padding:8px 4%;
+padding:7px 4%;
+min-height:76px;
+}
+
+.brand{
+gap:9px;
 }
 
 .logo{
-height:50px;
+height:66px;
+max-width:82px;
+}
+
+.brand-name{
+font-size:20px;
+letter-spacing:.5px;
 }
 
 nav{
 display:none;
 }
 
-section{
-padding:55px 5%;
-}
-
 .hero{
 min-height:72vh;
+padding:60px 5%;
 }
 
 .hero h1{
-font-size:42px;
+font-size:clamp(40px,12vw,58px);
 }
 
 .hero p{
 font-size:18px;
 }
 
+section{
+padding:55px 5%;
 }
+
+h2{
+font-size:32px;
+}
+
+.lead{
+font-size:17px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.gallery{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.float{
+right:14px;
+bottom:14px;
+padding:13px 18px;
+}
+
+}
+
+/* Very small phones */
+
+@media(max-width:380px){
+
+.logo{
+height:60px;
+max-width:72px;
+}
+
+.brand-name{
+font-size:18px;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+}
+
 </style>
 
-<!-- Local Business SEO Schema -->
+
+<!-- ================= LOCAL BUSINESS SEO ================= -->
+
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"LocalBusiness",
-  "@id":"https://belivitevents.in/#business",
   "name":"Belivit Events",
   "url":"https://belivitevents.in/",
+  "logo":"https://belivitevents.in/logo.png",
   "telephone":"+918796602233",
-  "description":"Professional wedding and event decoration services in Nashik and Nashik Road, Maharashtra.",
-  "image":"https://belivitevents.in/logo.png",
-  "priceRange":"₹₹",
+  "description":"Professional wedding and event decoration services in Nashik and Nashik Road including wedding decoration, birthday decoration, engagement decoration, haldi, mehendi, Ganpati and corporate event decoration.",
   "areaServed":[
     {
       "@type":"City",
@@ -264,26 +388,39 @@ font-size:18px;
   ],
   "serviceType":[
     "Wedding Decoration",
+    "Wedding Stage Decoration",
+    "Mandap Decoration",
     "Birthday Decoration",
-    "Ganpati Decoration",
-    "Haldi Decoration",
-    "Mehendi Decoration",
     "Engagement Decoration",
     "Reception Decoration",
-    "Event Decoration",
-    "Corporate Event Decoration"
+    "Haldi Decoration",
+    "Mehendi Decoration",
+    "Ganpati Decoration",
+    "Corporate Event Decoration",
+    "Event Decoration"
   ]
 }
 </script>
 
 </head>
 
+
 <body>
+
+<!-- ================= HEADER ================= -->
 
 <header>
 
-<a href="/" aria-label="Belivit Events Home">
-<img class="logo" src="logo.png" alt="Belivit Events wedding and event decoration logo">
+<a class="brand" href="/" aria-label="Belivit Events Home">
+
+<img
+class="logo"
+src="logo.png"
+alt="Belivit Events - Wedding and Event Decoration in Nashik"
+>
+
+<span class="brand-name">BELIVIT EVENTS</span>
+
 </a>
 
 <nav>
@@ -295,7 +432,10 @@ font-size:18px;
 
 </header>
 
+
 <main>
+
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
@@ -305,7 +445,9 @@ font-size:18px;
 ESTD 2015
 </div>
 
-<h1>Wedding & Event Decoration in Nashik</h1>
+<h1>
+Wedding & Event Decoration in Nashik
+</h1>
 
 <p>
 <strong>Belivit Events – Creating Beautiful Moments, Beautifully.</strong>
@@ -313,14 +455,19 @@ ESTD 2015
 Professional wedding and event decoration services in Nashik and Nashik Road.
 </p>
 
-<a class="btn primary" href="tel:+918796602233">
+<a
+class="btn primary"
+href="tel:+918796602233"
+>
 Call Now
 </a>
 
-<a class="btn secondary"
+<a
+class="btn secondary"
 href="https://wa.me/918796602233?text=Hi%20Belivit%20Events,%20I%20want%20to%20enquire%20about%20event%20decoration."
 target="_blank"
-rel="noopener">
+rel="noopener"
+>
 WhatsApp Now
 </a>
 
@@ -328,6 +475,8 @@ WhatsApp Now
 
 </section>
 
+
+<!-- ================= SERVICES ================= -->
 
 <section id="services">
 
@@ -337,97 +486,133 @@ WhatsApp Now
 Belivit Events provides creative, elegant and customized decoration for weddings, birthdays, engagements, traditional ceremonies, Ganpati celebrations and corporate events in Nashik and Nashik Road.
 </p>
 
+
 <div class="cards">
+
 
 <div class="card">
 <h3>💍 Wedding Decoration</h3>
-<p>Wedding stage decoration, mandap decoration, varmala setup, floral décor and reception decoration in Nashik.</p>
+<p>
+Wedding stage decoration, mandap decoration, varmala setup, floral décor and reception decoration in Nashik.
+</p>
 </div>
+
 
 <div class="card">
 <h3>🌼 Haldi & Mehendi Decoration</h3>
-<p>Bright, colorful and traditional Haldi and Mehendi decoration setups customized to your theme.</p>
+<p>
+Bright, colorful and traditional Haldi and Mehendi decoration setups customized to your theme.
+</p>
 </div>
+
 
 <div class="card">
 <h3>🎂 Birthday Decoration</h3>
-<p>Creative birthday themes, balloon decoration, backdrops and cake-table styling for memorable celebrations.</p>
+<p>
+Theme birthdays, balloon décor, backdrops and cake-table styling for memorable celebrations.
+</p>
 </div>
+
 
 <div class="card">
 <h3>🪔 Ganpati Decoration</h3>
-<p>Beautiful Ganpati decoration for homes, offices and society celebrations with customized themes.</p>
+<p>
+Beautiful home and office Ganpati decoration with premium and traditional theme options.
+</p>
 </div>
+
 
 <div class="card">
 <h3>🌸 Engagement & Reception</h3>
-<p>Elegant engagement and reception stage decoration with floral, backdrop and lighting concepts.</p>
+<p>
+Elegant stage, floral decoration and lighting concepts for memorable engagement and reception events.
+</p>
 </div>
+
 
 <div class="card">
 <h3>✨ Corporate & Event Decoration</h3>
-<p>Professional event decoration, entrance decoration, stage setups and venue styling for corporate events.</p>
+<p>
+Professional event styling, entrances, stages and venue decoration for corporate and social events.
+</p>
 </div>
+
 
 </div>
 
 </section>
 
+
+<!-- ================= GALLERY ================= -->
 
 <section id="gallery">
 
 <h2>Our Decoration Work in Nashik</h2>
 
 <p class="lead">
-Explore real decoration projects by Belivit Events.
+A selection of Belivit Events wedding and event decoration projects.
 </p>
+
 
 <div class="gallery">
 
+
 <a class="gallery-item" href="gallery-1.jpeg" target="_blank">
-<img src="gallery-1.jpeg" alt="Wedding decoration setup in Nashik by Belivit Events" loading="lazy">
+<img src="gallery-1.jpeg" alt="Wedding decoration by Belivit Events in Nashik">
 </a>
+
 
 <a class="gallery-item" href="gallery-2.jpeg" target="_blank">
-<img src="gallery-2.jpeg" alt="Event entrance decoration in Nashik by Belivit Events" loading="lazy">
+<img src="gallery-2.jpeg" alt="Wedding stage decoration in Nashik">
 </a>
+
 
 <a class="gallery-item" href="gallery-3.jpeg" target="_blank">
-<img src="gallery-3.jpeg" alt="Birthday decoration setup in Nashik by Belivit Events" loading="lazy">
+<img src="gallery-3.jpeg" alt="Event decoration by Belivit Events">
 </a>
+
 
 <a class="gallery-item" href="gallery-4.jpeg" target="_blank">
-<img src="gallery-4.jpeg" alt="Traditional event decoration in Nashik" loading="lazy">
+<img src="gallery-4.jpeg" alt="Mandap decoration in Nashik">
 </a>
+
 
 <a class="gallery-item" href="gallery-5.jpeg" target="_blank">
-<img src="gallery-5.jpeg" alt="Wedding stage decoration by Belivit Events Nashik" loading="lazy">
+<img src="gallery-5.jpeg" alt="Haldi decoration in Nashik">
 </a>
+
 
 <a class="gallery-item" href="gallery-6.jpeg" target="_blank">
-<img src="gallery-6.jpeg" alt="Haldi decoration setup in Nashik" loading="lazy">
+<img src="gallery-6.jpeg" alt="Birthday decoration in Nashik">
 </a>
+
 
 <a class="gallery-item" href="gallery-7.jpeg" target="_blank">
-<img src="gallery-7.jpeg" alt="Engagement decoration in Nashik by Belivit Events" loading="lazy">
+<img src="gallery-7.jpeg" alt="Ganpati decoration in Nashik">
 </a>
+
 
 <a class="gallery-item" href="gallery-8.jpeg" target="_blank">
-<img src="gallery-8.jpeg" alt="Ganpati decoration setup in Nashik" loading="lazy">
+<img src="gallery-8.jpeg" alt="Engagement decoration in Nashik">
 </a>
+
 
 <a class="gallery-item" href="gallery-9.jpeg" target="_blank">
-<img src="gallery-9.jpeg" alt="Event stage decoration in Nashik" loading="lazy">
+<img src="gallery-9.jpeg" alt="Reception decoration in Nashik">
 </a>
 
+
 <a class="gallery-item" href="gallery-10.jpeg" target="_blank">
-<img src="gallery-10.jpeg" alt="Premium event decoration by Belivit Events" loading="lazy">
+<img src="gallery-10.jpeg" alt="Event decorator Nashik">
 </a>
+
 
 </div>
 
 </section>
 
+
+<!-- ================= ABOUT ================= -->
 
 <section id="about" class="about">
 
@@ -436,7 +621,7 @@ Explore real decoration projects by Belivit Events.
 <h2>About Belivit Events</h2>
 
 <p class="lead">
-Belivit Events is a professional wedding and event decoration company serving Nashik and Nashik Road, Maharashtra. We create stylish, memorable and customized décor for weddings, birthdays, engagements, Haldi, Mehendi, Ganpati celebrations and corporate events.
+Belivit Events is a professional event and wedding decoration company serving Nashik and Nashik Road. We create stylish, memorable and customized décor for weddings, birthdays, engagements, haldi, mehendi, Ganpati celebrations and corporate events.
 </p>
 
 </div>
@@ -444,26 +629,33 @@ Belivit Events is a professional wedding and event decoration company serving Na
 </section>
 
 
+<!-- ================= CONTACT ================= -->
+
 <section id="contact" class="contact">
 
-<h2>Let's Plan Your Event in Nashik</h2>
+<h2>Let's Plan Your Event</h2>
 
 <p class="lead">
-Share your event date, venue and decoration requirement with Belivit Events. We will suggest a suitable decoration setup for your celebration.
+Share your event date, venue and decoration requirement with us. We’ll suggest the right decoration setup for you.
 </p>
 
 <p>
 <strong>Nashik / Nashik Road, Maharashtra</strong>
 </p>
 
-<a class="btn primary" href="tel:+918796602233">
+<a
+class="btn primary"
+href="tel:+918796602233"
+>
 8796602233
 </a>
 
-<a class="btn secondary"
+<a
+class="btn secondary"
 href="https://wa.me/918796602233?text=Hi%20Belivit%20Events,%20I%20want%20to%20book%20decoration%20services."
 target="_blank"
-rel="noopener">
+rel="noopener"
+>
 Chat on WhatsApp
 </a>
 
@@ -472,18 +664,25 @@ Chat on WhatsApp
 </main>
 
 
-<a class="float"
+<!-- ================= FLOATING WHATSAPP ================= -->
+
+<a
+class="float"
 href="https://wa.me/918796602233?text=Hi%20Belivit%20Events,%20I%20want%20to%20enquire%20about%20decoration."
 target="_blank"
 rel="noopener"
-aria-label="Contact Belivit Events on WhatsApp">
+aria-label="Chat with Belivit Events on WhatsApp"
+>
 💬 WhatsApp
 </a>
 
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
-© 2026 Belivit Events · Wedding & Event Decoration in Nashik
+© 2026 Belivit Events · We Make Event Happen · Nashik
 </footer>
+
 
 </body>
 </html>
