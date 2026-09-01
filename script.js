@@ -1,0 +1,11 @@
+const nav=document.querySelector('.nav');
+const menu=document.querySelector('.menu');
+menu?.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const music=document.getElementById('bgMusic');
+const musicBtn=document.getElementById('musicBtn');
+let playing=false;
+musicBtn?.addEventListener('click',async()=>{if(!playing){try{await music.play();playing=true;musicBtn.innerHTML='♫ <span>Music On</span>'}catch(e){}}else{music.pause();playing=false;musicBtn.innerHTML='♪ <span>Music</span>'}});
+document.getElementById('year').textContent=new Date().getFullYear();
