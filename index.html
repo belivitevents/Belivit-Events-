@@ -19,8 +19,6 @@
 
 <link rel="canonical" href="https://belivitevents.in/">
 
-<!-- Open Graph -->
-
 <meta property="og:title" content="Belivit Events | Wedding & Event Decoration in Nashik">
 
 <meta property="og:description" content="Professional wedding and event decoration services in Nashik and Nashik Road. Weddings, birthdays, Ganpati, corporate events, theme parties and more.">
@@ -33,8 +31,6 @@
 
 <meta property="og:site_name" content="Belivit Events">
 
-<!-- Twitter -->
-
 <meta name="twitter:card" content="summary_large_image">
 
 <meta name="twitter:title" content="Belivit Events | Wedding & Event Decoration in Nashik">
@@ -43,8 +39,6 @@
 
 <meta name="twitter:image" content="https://belivitevents.in/logo.png">
 
-
-<!-- Local Business Schema -->
 
 <script type="application/ld+json">
 {
@@ -78,9 +72,11 @@
     "Engagement Decoration",
     "Corporate Event Decoration",
     "Theme Party Decoration",
+    "Kitty Party Decoration",
     "Home Decoration",
     "Venue Decoration",
     "Outdoor Decoration",
+    "Bar Counter Decoration",
     "Event Planning",
     "Event Rentals",
     "Event Fabrication"
@@ -107,22 +103,49 @@ background:#fff;
 line-height:1.6;
 }
 
+
+/* ================= HEADER ================= */
+
 header{
 position:sticky;
 top:0;
 z-index:100;
 background:#fff;
 box-shadow:0 2px 15px rgba(0,0,0,.08);
+
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:12px 6%;
+
+padding:10px 6%;
+min-height:90px;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:16px;
+text-decoration:none;
 }
 
 .logo{
-height:62px;
+height:76px;
 width:auto;
 display:block;
+object-fit:contain;
+}
+
+.brand-name{
+font-size:32px;
+font-weight:800;
+letter-spacing:1px;
+color:#b83b70;
+white-space:nowrap;
+}
+
+nav{
+display:flex;
+align-items:center;
 }
 
 nav a{
@@ -136,12 +159,19 @@ nav a:hover{
 color:#b83b70;
 }
 
+
+/* ================= HERO ================= */
+
 .hero{
 min-height:78vh;
+
 display:grid;
 place-items:center;
+
 text-align:center;
+
 padding:70px 6%;
+
 background:linear-gradient(135deg,#fff7fb,#fff);
 }
 
@@ -202,6 +232,9 @@ color:#b83b70;
 background:#fff;
 }
 
+
+/* ================= SECTIONS ================= */
+
 section{
 padding:75px 6%;
 max-width:1200px;
@@ -224,6 +257,9 @@ line-height:1.8;
 font-size:18px;
 }
 
+
+/* ================= SERVICE CARDS ================= */
+
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -240,19 +276,15 @@ box-shadow:0 8px 30px rgba(0,0,0,.06);
 .card h3{
 margin-top:0;
 font-size:22px;
+color:#222;
 }
 
 .card p{
 margin-bottom:0;
 }
 
-.service-link{
-display:inline-block;
-margin-top:12px;
-color:#b83b70;
-font-weight:700;
-text-decoration:none;
-}
+
+/* ================= RENTALS ================= */
 
 .highlight{
 background:#fafafa;
@@ -263,6 +295,31 @@ max-width:none;
 max-width:1200px;
 margin:auto;
 }
+
+.rental-grid,
+.production-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+}
+
+.rental-box,
+.production-box{
+padding:25px;
+border-radius:18px;
+background:#fff;
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+}
+
+.rental-box h3,
+.production-box h3{
+color:#b83b70;
+margin-top:0;
+font-size:21px;
+}
+
+
+/* ================= GALLERY ================= */
 
 .gallery{
 display:grid;
@@ -290,6 +347,9 @@ transition:.3s;
 transform:scale(1.04);
 }
 
+
+/* ================= ABOUT ================= */
+
 .about{
 background:#fafafa;
 max-width:none;
@@ -305,26 +365,8 @@ font-size:18px;
 line-height:1.8;
 }
 
-.rental-grid,
-.production-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-gap:20px;
-}
 
-.rental-box,
-.production-box{
-padding:25px;
-border-radius:18px;
-background:#fff;
-box-shadow:0 8px 25px rgba(0,0,0,.07);
-}
-
-.rental-box h3,
-.production-box h3{
-color:#b83b70;
-margin-top:0;
-}
+/* ================= CONTACT ================= */
 
 .contact{
 text-align:center;
@@ -342,6 +384,9 @@ font-size:19px;
 margin:20px 0;
 }
 
+
+/* ================= FOOTER ================= */
+
 footer{
 padding:30px 6%;
 text-align:center;
@@ -349,28 +394,50 @@ background:#222;
 color:#fff;
 }
 
+
+/* ================= WHATSAPP ================= */
+
 .float{
 position:fixed;
 right:20px;
 bottom:20px;
+
 background:#25d366;
 color:#fff;
+
 padding:15px 22px;
+
 border-radius:30px;
+
 text-decoration:none;
 font-weight:700;
+
 box-shadow:0 5px 20px rgba(0,0,0,.25);
+
 z-index:200;
 }
+
+
+/* ================= MOBILE ================= */
 
 @media(max-width:700px){
 
 header{
 padding:9px 4%;
+min-height:78px;
 }
 
 .logo{
-height:55px;
+height:60px;
+}
+
+.brand{
+gap:10px;
+}
+
+.brand-name{
+font-size:24px;
+letter-spacing:.5px;
 }
 
 nav{
@@ -401,6 +468,26 @@ font-size:32px;
 .float{
 right:15px;
 bottom:15px;
+padding:14px 19px;
+}
+
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media(max-width:390px){
+
+.logo{
+height:52px;
+}
+
+.brand-name{
+font-size:20px;
+}
+
+.hero h1{
+font-size:40px;
 }
 
 }
@@ -413,11 +500,11 @@ bottom:15px;
 <body>
 
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
-<a href="/" aria-label="Belivit Events Home">
+<a href="/" class="brand" aria-label="Belivit Events Home">
 
 <img
 class="logo"
@@ -425,7 +512,10 @@ src="logo.png"
 alt="Belivit Events logo - Wedding and Event Decoration in Nashik"
 >
 
+<span class="brand-name">BELIVIT EVENTS</span>
+
 </a>
+
 
 <nav>
 
@@ -450,29 +540,41 @@ alt="Belivit Events logo - Wedding and Event Decoration in Nashik"
 <main>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
 <div class="hero-content">
 
-<div class="estd">ESTD 2015</div>
+<div class="estd">
+ESTD 2015
+</div>
+
 
 <h1>
+
 <span>Wedding & Event</span>
+
 <span>Decoration in Nashik</span>
+
 </h1>
+
 
 <p class="hero-subtitle">
 Belivit Events – Creating Beautiful Moments, Beautifully.
 </p>
 
+
 <p>
+
 Professional wedding and event decoration services in
 <strong>Nashik and Nashik Road</strong>.
+
 We create stylish and customized setups for weddings,
 birthdays, engagements, celebrations and corporate events.
+
 </p>
+
 
 <a
 class="btn primary"
@@ -480,6 +582,7 @@ href="tel:+918796602233"
 >
 Call Now
 </a>
+
 
 <a
 class="btn secondary"
@@ -490,22 +593,26 @@ rel="noopener"
 WhatsApp Now
 </a>
 
+
 </div>
 
 </section>
 
 
 
-<!-- SERVICES -->
+<!-- ================= SERVICES ================= -->
 
 <section id="services">
 
 <h2>Wedding & Event Decoration Services in Nashik</h2>
 
+
 <p class="lead">
+
 Belivit Events provides creative, elegant and customized decoration
 services for weddings, birthdays, engagements, traditional ceremonies,
 Ganpati celebrations, parties and corporate events in Nashik and Nashik Road.
+
 </p>
 
 
@@ -598,6 +705,18 @@ kitty parties, private parties and special celebrations.
 
 <div class="card">
 
+<h3>🎀 Kitty Party Decoration</h3>
+
+<p>
+Beautiful and customized kitty party decoration with
+themes, backdrops, tables, seating and decorative elements.
+</p>
+
+</div>
+
+
+<div class="card">
+
 <h3>🏠 Home Decoration</h3>
 
 <p>
@@ -656,24 +775,40 @@ for private celebrations, parties and special occasions.
 </div>
 
 
+<div class="card">
+
+<h3>🍽️ Catering</h3>
+
+<p>
+Event catering services for weddings, parties,
+corporate functions and special celebrations.
+</p>
+
+</div>
+
+
 </div>
 
 </section>
 
 
 
-<!-- RENTALS -->
+<!-- ================= RENTALS ================= -->
 
 <section id="rentals" class="highlight">
 
 <div class="highlight-inner">
 
+
 <h2>Event Props & Furniture Rental in Nashik</h2>
 
+
 <p class="lead">
+
 We also provide event decoration props, furniture and selected
 event elements on rental for weddings, parties, corporate events,
 photo setups and venue decoration.
+
 </p>
 
 
@@ -706,7 +841,7 @@ photo areas, wedding setups and parties.
 
 <div class="rental-box">
 
-<h3>🪑 Tables</h3>
+<h3>🪑 Event Tables</h3>
 
 <p>
 Event tables for cake counters, guest seating,
@@ -760,17 +895,22 @@ selfie points and themed event setups.
 
 
 
-<!-- PRODUCTION / FABRICATION -->
+<!-- ================= PRODUCTION ================= -->
 
 <section id="production">
 
+
 <h2>Event Production & Fabrication in Nashik</h2>
 
+
 <p class="lead">
+
 Belivit Events also works on event production and fabrication.
+
 We design and create custom decoration props, furniture,
 metal structures and other event-related elements according
 to project requirements.
+
 </p>
 
 
@@ -855,15 +995,19 @@ to design, size, theme and project requirements.
 
 
 
-<!-- GALLERY -->
+<!-- ================= GALLERY ================= -->
 
 <section id="gallery">
 
+
 <h2>Our Event Decoration Work in Nashik</h2>
 
+
 <p class="lead">
+
 Explore some of our wedding, birthday, Ganpati,
 party and event decoration projects.
+
 </p>
 
 
@@ -1016,13 +1160,16 @@ loading="lazy"
 
 
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 
 <section id="about" class="about">
 
+
 <div class="about-inner">
 
+
 <h2>About Belivit Events</h2>
+
 
 <p class="lead">
 
@@ -1047,17 +1194,20 @@ frames and other event-related production requirements.
 
 </p>
 
+
 </div>
 
 </section>
 
 
 
-<!-- SERVICE AREA -->
+<!-- ================= LOCAL SEO ================= -->
 
 <section>
 
+
 <h2>Event Decoration Services Near Nashik</h2>
+
 
 <p class="lead">
 
@@ -1071,21 +1221,26 @@ event rentals and custom event production.
 
 </p>
 
+
 </section>
 
 
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 
 <section id="contact" class="contact">
 
+
 <div class="contact-inner">
 
+
 <h2>Let's Plan Your Event</h2>
+
 
 <p class="lead">
 
 Share your event date, venue and decoration requirement with us.
+
 We will suggest a suitable decoration setup for your event.
 
 </p>
@@ -1093,9 +1248,13 @@ We will suggest a suitable decoration setup for your event.
 
 <div class="contact-info">
 
-<strong>Belivit Events</strong><br>
+<strong>Belivit Events</strong>
 
-Nashik / Nashik Road, Maharashtra<br>
+<br>
+
+Nashik / Nashik Road, Maharashtra
+
+<br>
 
 <strong>Phone: 8796602233</strong>
 
@@ -1129,7 +1288,7 @@ Chat on WhatsApp
 
 
 
-<!-- FLOATING WHATSAPP -->
+<!-- ================= FLOATING WHATSAPP ================= -->
 
 <a
 class="float"
@@ -1142,6 +1301,8 @@ aria-label="Contact Belivit Events on WhatsApp"
 </a>
 
 
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
